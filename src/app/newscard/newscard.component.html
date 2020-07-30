@@ -1,0 +1,11 @@
+<div class="mycard">
+<mat-card class="mymat" (click)="editValue()">
+<mat-card-title>{{mynews.title}}</mat-card-title>
+<mat-card-content>
+ {{mynews.descri}}
+</mat-card-content>
+</mat-card>
+<button (click)="checkValid(true)">Valid News</button>
+<button (click)="checkValid(false)">Invalid News</button>
+<button (click)="showDetails()"> Details </button>
+</div>

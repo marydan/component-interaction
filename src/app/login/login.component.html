@@ -1,0 +1,20 @@
+<h3> Login</h3>
+<div></div>
+
+<form [formGroup]="loginform"  (ngSubmit)="getValue()">
+
+    <div class="clsdiv">
+<input type="text" name="txtname" matInput formControlName="username"  placeholder="Enter user name">
+<span>{{checkId()}}</span> <br>
+
+<input type='text' name="txtpass" matInput formControlName="password" placeholder="Enter PAssowrd">
+<span>{{ checkPassword()}}</span>
+
+<button type="submit">Login</button>
+
+ <button (click)="checkvalid()">Check Valid </button> 
+        
+    </div>
+</form>
+
+

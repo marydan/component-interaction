@@ -1,0 +1,11 @@
+.dispcard
+{
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+    background: lightskyblue;
+    /* height:40vh; */
+}

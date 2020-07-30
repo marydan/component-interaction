@@ -1,0 +1,13 @@
+.clsdisp
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width:200px;
+}
+
+.clsnews
+{
+    background: lightpink;
+    
+}

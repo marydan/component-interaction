@@ -1,0 +1,21 @@
+.clsdisp
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width:200px;
+}
+
+.dispcard
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+mat-card
+{
+    width:100px;
+    height:100px;
+    background:yellow;
+}

@@ -1,0 +1,6 @@
+.mydialog
+{
+    background: lightseagreen;
+    display: flex;
+    flex-direction: column;
+}

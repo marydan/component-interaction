@@ -1,0 +1,11 @@
+<mat-toolbar> 
+ <h4> Welcome </h4>
+    
+ <div class="keep-c-toggle-view">
+    <i *ngIf="isNoteView" (click)="changeView()" class="material-icons switchToListView">view_list</i>
+    <i *ngIf="!isNoteView" (click)="changeView()" class="material-icons switchToNoteView">view_quilt</i>
+</div>
+
+
+ <button (click)="logout()"> Logout </button>
+</mat-toolbar>

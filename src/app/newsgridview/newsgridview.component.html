@@ -1,0 +1,15 @@
+
+
+
+    <h3> News Detaisl </h3>
+<h5>  
+     Valid News Count : {{validcount}}
+     Invalid News Count : {{invalidcount}}
+</h5>
+<div class="dispcard">
+    <app-newscard [mynews]="newsobj" *ngFor="let newsobj of newsarr" (validity)="Check($event)">
+
+    </app-newscard>
+    
+    </div>
+  

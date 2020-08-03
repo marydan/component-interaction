@@ -10,15 +10,15 @@
        </mat-expansion-panel-header>
         <div class="clsdisp">
           <mat-form-field>
-         <input matInput #eid placeholder="Enter news id" [(ngModel)]="news.id">
+         <input matInput name="eid" placeholder="Enter news id" [(ngModel)]="news.id">
         </mat-form-field>
         <mat-form-field>
-        <input matInput #name placeholder="Enter title" [(ngModel)]="news.title"> 
+        <input matInput name="title" placeholder="Enter title" [(ngModel)]="news.title"> 
           </mat-form-field>
            <mat-form-field>
-            <input matInput #name placeholder="Enter Description" [(ngModel)]="news.descri"> 
+            <input matInput name="descri" placeholder="Enter Description" [(ngModel)]="news.descri"> 
               </mat-form-field>
-         <button (click)="addRecord()">Register</button> 
+   <button class="clsregister" (click)="addRecord()">Take Note</button> 
        <span id="errinfo"></span>
       </div>
       

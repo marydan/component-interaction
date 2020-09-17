@@ -111,7 +111,7 @@ return this.getNewsTakerComponent().element(by.buttonText('Take Note'));
 
 
 getMockNote(): any {
-  const news: any = {id :901, title: 'August', descri : 'Festival month'};
+  const news: any = {id :905, title: 'August', descri : 'Festival month'};
   return news;
 }
 

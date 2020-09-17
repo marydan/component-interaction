@@ -1,0 +1,17 @@
+<h3> New User Registration</h3>
+
+<form [formGroup]="registerform"  (ngSubmit)="storeRec()">
+
+    <div class="clsdiv">
+<input type="text" name="txtname" matInput formControlName="username"  placeholder="Enter user name">
+
+
+<input type='text' name="txtpass" matInput formControlName="password" placeholder="Enter PAssowrd">
+
+
+<button class="btnsubmit" type="submit">Register</button>
+
+<button (click)="callLogin()">Login </button>
+        
+    </div>
+</form>

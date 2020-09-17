@@ -103,16 +103,16 @@ browser.sleep(1000);
   browser.sleep(3000);
  });
   
-it('checking ',()=>{
+// it('checking ',()=>{
 
-  let uname=element(by.name('txtname'));
-    expect(uname).toBeTruthy();
+//   let uname=element(by.name('txtname'));
+//     expect(uname).toBeTruthy();
 
-    let elements=element.all(by.css('input'));
-    elements.get(0).sendKeys('admin');
-    elements.get(1).sendKeys('password');
+//     let elements=element.all(by.css('input'));
+//     elements.get(0).sendKeys('admin');
+//     elements.get(1).sendKeys('password');
 
-});
+// });
 
    
 

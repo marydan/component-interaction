@@ -22,6 +22,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { EditnewsdialogComponent } from './editnewsdialog/editnewsdialog.component';
 import { EditnewsopenerComponent } from './editnewsopener/editnewsopener.component';
 import { MytestComponent } from './mytest/mytest.component';
+import { RegisterComponent } from './register/register.component';
 const rout : Routes =[
  
   {
@@ -75,7 +76,8 @@ const rout : Routes =[
     NewscardComponent,
     EditnewsdialogComponent,
     EditnewsopenerComponent,
-    MytestComponent
+    MytestComponent,
+    RegisterComponent
 
   ],
   imports: [

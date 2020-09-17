@@ -57,7 +57,8 @@ export class LoginComponent implements OnInit {
              
            let tok=res["token"];
             this.authobj.setMytoken(tok);
-            this.routobj.openDashboard();
+            console.log(tok);
+       //     this.routobj.openDashboard();
           }         ,
     (err)=>
       { 

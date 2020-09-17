@@ -18,22 +18,27 @@ export class MycanactivateGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
  
-     let ans=this.authservice.checkUserAuthenticated();
+    // let ans=this.authservice.checkUserAuthenticated();
      
-       return  ans.then
-         (
+    let ans;
+  
+    let mytoken=this.authservice.getMytoken();
+     if (mytoken!=null)
+      ans=true;
+      else
+      ans=false;
+
+       if( !ans)
+        {
            (res)=>
                   {
                     if(!res)
                     this.rouobj.openLogin();
                   
-                  return res;
+                  return false;
                   }
-         )
-         .catch (
-           e=>
-           {return false;}
-           )
+          }
+      return true;   
   }
   
 }

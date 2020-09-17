@@ -15,7 +15,7 @@ export class MyauthService {
    authenticateUser(userdet)
    {
    
-     return this.httpcli.post('http://localhost:3000/auth/v1',userdet);
+     return this.httpcli.post('http://localhost:9095/api/register/login',userdet);
    }
 
    setMytoken(tok)
@@ -29,17 +29,17 @@ export class MyauthService {
    return sessionStorage.getItem("mytoken");
    }
 
-   checkUserAuthenticated() : Promise<boolean>
-   {
-     let tok=this.getMytoken();
-     return this.httpcli.post('http://localhost:3000/auth/v1/isAuthenticated',
-     {},
-     {headers : new HttpHeaders().set('Authorization',`Bearer ${tok}`)}
-     ).map(
-       (res)=>{return (res["isAuthenticated"]);}
-       ).toPromise();
+  //  checkUserAuthenticated() : Promise<boolean>
+  //  {
+  //    let tok=this.getMytoken();
+  //    return this.httpcli.post('http://localhost:3000/auth/v1/isAuthenticated',
+  //    {},
+  //    {headers : new HttpHeaders().set('Authorization',`Bearer ${tok}`)}
+  //    ).map(
+  //      (res)=>{return (res["isAuthenticated"]);}
+  //      ).toPromise();
 
 
-   }
+  //  }
 
 }
